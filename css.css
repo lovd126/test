@@ -1,0 +1,273 @@
+
+*{margin: 0;padding: 0;}
+
+#hbar ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: orange;
+}
+
+#hbar li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+#hbar li:last-child {
+    border-right: none;
+  }
+  
+#hbar li a {
+    display: block;
+    color: white;
+    height: 30px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+#hbar .logout {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+#hbar li a:hover:not(.active) {
+    background-color: orangered;
+  }
+  
+  .round_icon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+
+  .login-form-container{
+    width:250px;
+    height: auto;
+    padding: 20px 30px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #000;
+    margin: auto;
+    margin-top: 25vh;
+}
+
+ul.login-list{
+    list-style-type: none;
+    /* text-align: center; */
+}
+
+ul.login-list li{
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+ul.login-list li a{
+    
+    font-size: 10px;
+}
+
+ul.login-list li input[type="text"], ul.login-list li input[type="password"]{
+  width: 250px;
+  text-align: center;
+  padding: 10px 0px;
+  background-color:#D3CCCB;
+  border: none;
+  border-radius: 5px;
+}
+
+ul.login-list li input[type="button"]{
+  width: 250px;
+  text-align: center;
+  padding: 10px 0px;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+ul.login-list li input[type="button"]:hover{
+  background-color: #FFF;
+  color: black;
+}
+
+.register-form{
+  width:250px;
+  height: auto;
+  padding: 20px 30px;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #000;
+  margin: auto;
+  margin-top: 15vh;
+}
+
+ul.register-list{
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+}
+
+ul.register-list li{
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+ul.register-list li input[type="text"], ul.register-list li input[type="password"]{
+  width: 250px;
+  text-align: center;
+  padding: 10px 0px;
+  background-color:#D3CCCB;
+  border: none;
+  border-radius: 5px;
+}
+
+ul.register-list li input[type="button"]{
+  width: 250px;
+  text-align: center;
+  padding: 10px 0px;
+  background-color:orange;
+  color: white;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+ul.register-list li input[type="button"]:hover{
+  background-color: #FFF;
+  color: black;
+}
+
+
+.profile_round_icon{
+  width: 50px;
+  height: 50px;
+  padding: 3px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.pro-flex-container{
+  width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: serif;
+}
+
+.pro-flex-container-form-title{
+  background: #FF8D33; 
+
+  border-radius:5px 5px 0 0 ;
+  padding: 20px;
+  color: #f6f6f6;
+}
+
+.pro-flex-container-flex{
+  display: flex;
+  flex-direction: row;
+  background-color: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  padding: 30px;
+  text-align : center;
+}
+
+.pro-flex-container-flex form{
+  flex: 4;
+}
+
+.pro-flex-container-flex form table tr td input[type=text] ,
+.pro-flex-container-flex form table tr td input[type=password]{
+  border-style: groove;
+  height: 30px;
+  padding: 5px ;
+  width: auto;
+  margin-left: 80%;
+  margin-bottom: 10px;
+  display:inline-block;
+  border: 1px solid #dadada;
+
+}
+
+.pro-title h2 {
+  margin : 0px;
+  padding-left: 15px;
+}
+
+.pro-flex-container-flex form input[type=button]{
+  width: 350px;
+  text-align: center; 
+  padding: 10px;
+  background-color: #FF8D33;
+  color: white;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  margin-top: 30px;
+}
+
+.pro-flex-container-flex form input[type="button"]:hover{
+  background-color: #FFF;
+  color:  #FF8D33;
+}
+/*  */
+
+.create-form{
+  width:250px;
+  height: auto;
+  padding: 20px 30px;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #000;
+  margin: auto;
+  margin-top: 15vh;
+}
+
+ul.create-list{
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+}
+
+ul.create-list li{
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+ul.create-list li input[type="text"], ul.create-list li input[type="password"]{
+  width: 250px;
+  text-align: center;
+  padding: 10px 0px;
+  background-color:#D3CCCB;
+  border: none;
+  border-radius: 5px;
+}
+
+ul.create-list li input[type="button"]{
+  width: 250px;
+  text-align: center;
+  padding: 10px 0px;
+  background-color:orange;
+  color: white;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+ul.create-list li input[type="button"]:hover{
+  background-color: #FFF;
+  color: black;
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream House Online</title>
+    <script type="text/javascript" src="jslib/jquery-1.11.1.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" type= "image/png" sizes="32x32" href="icons/favicon.ico">
+    <link rel="manifest" href="/manifest.json">	
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function() {
+                $("#submit").click(function() {
+                    var account,i;
+                    $.getJSON("json/account.json",function(data){
+                        for (i in data.account) {
+                            if(data.account[i]+""==$("#accName").val()){
+                                if(data.password[i]==$("#password").val()){
+                                    var result = $("#password").val();
+                                    alert("Login success\nClick Ok to continue");
+                                    if(result==1){
+                                       window.location.assign("normalUser.html");
+                                       document.cookie = "username=" + 1;
+                                       document.cookie = "password=" + 1;
+                                       break;
+                                    }
+                                    if(result==2){
+                                        window.location.assign("propertyAgent.html");
+                                        document.cookie = "username=" + 2;
+                                        document.cookie = "password=" + 2;
+                                        break;
+                                    }
+                                    if(result==3){
+                                        window.location.assign("companyManager.html");
+                                        document.cookie = "username=" + 3;
+                                        document.cookie = "password=" + 3;
+                                        break;
+                                    }
+                                    if(result == 4){
+                                        window.location.assign("normalUser.html");
+                                       document.cookie = "username=" + 4;
+                                       document.cookie = "password=" + 4;
+                                       break;
+
+                                    }
+                                }
+                            }
+                            if(i==3){
+                                alert("Something wrong");
+                                break;
+                            }
+                        }
+                        
+
+                    });
+                    /*if(document.getElementById("accName").value !="" &&
+                    document.getElementById("password").value !=""){
+                        alert("Login Success!");
+                        window.location.assign("normalUser.html");
+                    }else{
+                        if(document.getElementById("accName").value ==""){
+                            alert("The username must not be blank!");
+                        }else if(document.getElementById("password").value ==""){
+                            alert("The password must not be blank!");
+                        }
+                    }*/
+                });              
+
+                $("#register").click(function(){
+                    window.location.assign("register.html");
+                });
+        });
+
+    </script>
+</head>
+
+<body>
+    <form method="post">
+        <div class = "login-form-container">
+            <ul class = "login-list">
+            <li style="text-align: center;">Login</li>
+            <li><input type = "text" id = "accName" name = "accName" placeholder="Account Name"></li>
+            <li><input type = "password" id = "password" name = "password" placeholder="Password">
+                <br><a href="register.html" style="text-align: left;">Sign up an account</a></li>
+            <li><input type = "button" id = "submit" name = "submit" value="Login"></li>
+            </ul>
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+body{
+    font-size: 12px;
+    line-height: 16px;
+}
+div.detail{
+    background-color: #FFFFFF;
+    padding: 22px 15px 22px 5px;
+    border: double;
+}
+div.information{
+    position: relative;
+    left: 340px;
+    display: inline-block;
+    
+}
+div.comment{
+    margin-top: 2em;
+}
+div{
+    display: block;
+}
+div.title{
+    background: #DFDFDF;
+    font-weight: bold;
+    padding: 4px;
+    color: #000000;
+    margin-top: 2em;
+}
+div.content{
+    padding: 2% 1%;
+    border-bottom: 2px solid #d1d1d1;
+    width: 98%;
+    margin-top: 0;
+    position: relative;
+}
+div.agentIcon{
+    display: inline-block;
+    vertical-align: top;
+    width: 75px;
+    height: 100px;
+    background-size: cover;
+    background-position: center center;
+}
+#icon{
+    width: 75px;
+     height: 100px;
+}
+div.text{
+    display: inline-block;
+}
+div.img{
+    width:"350";
+    height: 250;
+}
